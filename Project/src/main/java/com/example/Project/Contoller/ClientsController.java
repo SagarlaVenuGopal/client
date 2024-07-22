@@ -21,7 +21,8 @@ public class ClientsController {
 
 	@PostMapping("/saveClient")
 	public ResponseEntity<ResponseStruture<Clients>> saveClient(@RequestBody Clients clients) {
-		return  clientsService.saveClient(clients);
+		System.out.println("raju");
+	return  clientsService.saveClient(clients);
 	}
 	@GetMapping("/fetchClientById")
 	public ResponseEntity<ResponseStruture<Clients>> fetchClientById(int id) {
